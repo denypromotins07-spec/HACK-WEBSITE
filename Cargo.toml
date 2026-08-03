@@ -1,0 +1,32 @@
+[workspace]
+resolver = "2"
+members = ["."]
+
+[package]
+name = "swarm-engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.35", features = ["full", "rt-multi-thread", "sync", "time", "macros"] }
+reqwest = { version = "0.11", features = ["json"], default-features = false }
+clap = { version = "4.4", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["json", "env-filter"] }
+mimalloc = { version = "0.1", features = ["secure"] }
+crossbeam = "0.8"
+parking_lot = "0.12"
+bytes = "1.5"
+thiserror = "1.0"
+url = "2.5"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
+opt-level = 3
+
+[[bin]]
+name = "swarm-engine"
+path = "src/main.rs"
