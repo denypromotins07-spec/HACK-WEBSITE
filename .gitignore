@@ -4,26 +4,28 @@
 __pycache__/
 *.o
 *.obj
+*.class
 *.exe
 *.dll
 *.so
 *.a
 *.out
+*.swp
+*.swo
 
 # Dependencies
 .venv/
 venv/
 node_modules/
-target/
-.gradle/
 .mypy_cache/
 .pytest_cache/
+target/
+.gradle/
 
 # Logs and temp files
 *.log
 *.tmp
-*.swp
-*.swo
+*.temp
 
 # Environment
 .env
