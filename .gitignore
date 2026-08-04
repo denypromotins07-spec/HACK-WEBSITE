@@ -1,7 +1,10 @@
 ```
 # Compiled and build artifacts
+*.pyc
+__pycache__/
 *.o
 *.obj
+*.class
 *.exe
 *.dll
 *.so
@@ -9,51 +12,36 @@
 *.out
 
 # Dependencies
-target/
-**/target/
+node_modules/
+venv/
+.venv/
+.env
+.env.local
+.env.*
 
 # Logs and temp files
 *.log
 *.tmp
+*.swp
 
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# Environment
-.env
-.env.local
-*.env.*
-
-# Coverage
+# Build systems
+build/
+dist/
+target/
+.gradle/
+.mypy_cache/
+.pytest_cache/
 coverage/
 htmlcov/
 .coverage
 
-# Python specific
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage*
-.nox/
-.pytest_cache/
-.mypy_cache/
-
-# Rust specific
-Cargo.lock
-*.rs.bk
-$CARGO_TARGET_DIR/
-**/$CARGO_TARGET_DIR/
+# System files
+.DS_Store
+Thumbs.db
 
 # Compressed files
 *.zip
