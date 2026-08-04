@@ -9,46 +9,41 @@ __pycache__/
 *.so
 *.a
 *.out
-*.class
 
 # Dependencies
-node_modules/
-venv/
 .venv/
-.env
-.env.local
-.env.*
-
-# Build directories (common for Rust projects)
+venv/
+node_modules/
 target/
-Cargo.lock
-
-# Editors/IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
+.gradle/
+.mypy_cache/
+.pytest_cache/
 
 # Logs and temp files
 *.log
 *.tmp
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
 
 # System files
 .DS_Store
 Thumbs.db
 
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Cache directories
-.mypy_cache/
-.pytest_cache/
-.gradle/
-
-# Distribution archives
+# Compressed files
 *.zip
 *.gz
 *.tar
