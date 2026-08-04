@@ -1,7 +1,5 @@
 ```
 # Compiled and build artifacts
-*.pyc
-__pycache__/
 *.o
 *.obj
 *.exe
@@ -9,41 +7,81 @@ __pycache__/
 *.so
 *.a
 *.out
-*.class
 
 # Dependencies
-node_modules/
-venv/
-.venv/
-.env
-.env.local
-.env.*
-
-# Build directories (common for Rust projects)
 target/
+**/target/
 
 # Logs and temp files
 *.log
 *.tmp
 *.swp
 
-# Editors/IDE
+# Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# System files
-.DS_Store
-Thumbs.db
-
-# Coverage
+# Coverage reports
 coverage/
 htmlcov/
-.coverage
+*.coverage
 
-# Cache directories
+# Environment
+.env
+.env.local
+.env.*
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.Python
+*.pyc
+*.pyo
+*.pyd
+*.py~
+*.pyc
+*.pyo
+*.pyd
+*.py~
+
+# Rust specific
+Cargo.lock
+**/Cargo.lock
+**/target/
+**/Cargo.toml.orig
+**/Cargo.toml.backup
+**/Cargo.lock.backup
+
+# MyPy cache
 .mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest cache
 .pytest_cache/
+
+# Gradle
 .gradle/
+
+# Node
+node_modules/
+
+# Virtual environments
+venv/
+.venv/
+.env/
+ENV/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 ```
