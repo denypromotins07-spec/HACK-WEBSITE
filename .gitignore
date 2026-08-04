@@ -1,5 +1,7 @@
 ```
 # Compiled and build artifacts
+*.pyc
+__pycache__/
 *.o
 *.obj
 *.exe
@@ -7,8 +9,7 @@
 *.so
 *.a
 *.out
-*.pyc
-__pycache__/
+*.class
 
 # Dependencies
 node_modules/
@@ -20,28 +21,54 @@ venv/
 
 # Build directories (common for Rust projects)
 target/
-dist/
-build/
+Cargo.lock
 
-# IDE and editor files
+# Editors/IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
 *.tmp
 
-# Logs and coverage
+# Logs and temp files
 *.log
-coverage/
-htmlcov/
-.coverage
+*.tmp
 
 # System files
 .DS_Store
 Thumbs.db
 
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
 # Cache directories
 .mypy_cache/
 .pytest_cache/
 .gradle/
+
+# Distribution archives
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```
