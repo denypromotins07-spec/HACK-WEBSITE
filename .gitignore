@@ -4,15 +4,11 @@
 __pycache__/
 *.o
 *.obj
-*.class
 *.exe
 *.dll
 *.so
 *.a
 *.out
-*.swp
-*.swo
-
 # Dependencies
 .venv/
 venv/
@@ -21,51 +17,24 @@ node_modules/
 .pytest_cache/
 target/
 .gradle/
-
+build/
+dist/
 # Logs and temp files
 *.log
 *.tmp
-*.temp
-
+*.swp
 # Environment
 .env
 .env.local
-*.env.*
-
+.env.*
 # Editors
 .vscode/
 .idea/
-
 # Coverage
 coverage/
 htmlcov/
 .coverage
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Compressed files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
+# Rust specific
+Cargo.lock
+target/
 ```
