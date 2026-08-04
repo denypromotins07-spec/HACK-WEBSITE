@@ -7,13 +7,41 @@
 *.so
 *.a
 *.out
+*.pyc
+__pycache__/
+
 # Dependencies
+node_modules/
+venv/
+.venv/
+.env
+.env.local
+.env.*
+
+# Build directories (common for Rust projects)
 target/
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-# Editors
+dist/
+build/
+
+# IDE and editor files
 .vscode/
 .idea/
+*.swp
+*.swo
+*.tmp
+
+# Logs and coverage
+*.log
+coverage/
+htmlcov/
+.coverage
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Cache directories
+.mypy_cache/
+.pytest_cache/
+.gradle/
 ```
