@@ -2,29 +2,46 @@
 # Compiled and build artifacts
 *.o
 *.obj
-*.a
-*.lib
+*.exe
 *.dll
 *.so
-*.dylib
-*.exe
-*.out
+*.a
+*.pyc
+__pycache__/
+*.class
+*.jar
+*.war
+*.zip
+*.tar.gz
+*.tar.xz
+*.tar.bz2
 
 # Dependencies
-target/
-Cargo.lock
-
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-
-# Editors
-.vscode/
-.idea/
-
-# Environment
+node_modules/
+venv/
+.venv/
 .env
 .env.local
 .env.*
+target/
+.gradle/
+.mypy_cache/
+.pytest_cache/
+coverage/
+htmlcov/
+.coverage
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
 ```
