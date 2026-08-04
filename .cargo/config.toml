@@ -1,5 +1,5 @@
 [build]
-rustflags = ["-C", "lto=fat", "-C", "codegen-units=1", "-C", "panic=abort"]
+rustflags = ["-C", "codegen-units=1", "-C", "panic=abort"]
 
 [profile.release]
 strip = true
